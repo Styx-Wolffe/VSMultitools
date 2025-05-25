@@ -4,7 +4,7 @@ using Vintagestory.GameContent;
 
 namespace Multitools
 {
-    public class ItemMultitools : ItemAxe
+    public class ItemPaxel : ItemAxe
     {
     }
 }
