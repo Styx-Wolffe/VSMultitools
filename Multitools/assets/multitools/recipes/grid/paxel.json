@@ -1,0 +1,28 @@
+{
+    "enabled": true,
+    "ingredientPattern": "H,F,S",
+
+    "ingredients": {
+        "H": {
+            "type": "item",
+            "code": "paxelhead-*",
+            "name": "metal"
+        },
+        "F": {
+            "type": "item",
+            "code": "game:flaxfibers"
+        },
+        "S": {
+            "type": "item",
+            "code": "game:stick"
+        }
+    },
+
+    "width": 1,
+    "height": 3,
+
+    "output": {
+        "type": "item",
+        "code": "multitools:paxel-{metal}"
+    }
+}

@@ -1,0 +1,34 @@
+{
+  // Copper & Bronze age
+  "multitools:item-paxel-copper": "Paxel (Copper)",
+  "multitools:item-paxelhead-copper": "Paxel Head (Copper)",
+  "multitools:item-paxel-tinbronze": "Paxel (Tin Bronze)",
+  "multitools:item-paxelhead-tinbronze": "Paxel Head (Tin Bronze)",
+  "multitools:item-paxel-bismuthbronze": "Paxel (Bismuth Bronze)",
+  "multitools:item-paxelhead-bismuthbronze": "Paxel Head (Bismuth Bronze)",
+  "multitools:item-paxel-blackbronze": "Paxel (Black Bronze)",
+  "multitools:item-paxelhead-blackbronze": "Paxel Head (Black Bronze)",
+  // Iron & Steel age
+  "multitools:item-paxel-iron": "Paxel (Iron)",
+  "multitools:item-paxelhead-iron": "Paxel Head (Iron)",
+  "multitools:item-paxel-meteoriciron": "Paxel (Meteoric Iron)",
+  "multitools:item-paxelhead-meteoriciron": "Paxel Head (Meteoric Iron)",
+  "multitools:item-paxel-steel": "Paxel (Steel)",
+  "multitools:item-paxelhead-steel": "Paxel Head (Steel)",
+  // Gold & Silver age
+  "multitools:item-paxel-gold": "Paxel (Gold)",
+  "multitools:item-paxelhead-gold": "Paxel Head (Gold)",
+  "multitools:item-paxel-silver": "Paxel (Silver)",
+  "multitools:item-paxelhead-silver": "Paxel Head (Silver)",
+
+  // Clay Molds
+  "multitools:block-paxelmold-raw-*": "Raw Paxel Mold",
+  "multitools:block-paxelmold-burned-*": "Paxel Mold",
+  "multitools:blockcraftdesc-paxelmold-raw": "For creating paxel heads from molten metals",
+
+  // Handbook
+  "multitools:paxel-metal-handbook-title": "",
+  "multitools:paxel-metal-handbook-text": "",
+  "multitools:paxelhead-metal-handbook-title": "",
+  "multitools:paxelhead-metal-handbook-text": ""
+}

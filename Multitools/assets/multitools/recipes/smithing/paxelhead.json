@@ -1,0 +1,41 @@
+{
+    "enabled": true,
+    "ingredient": {
+        "type": "item",
+        "code": "game:ingot-*",
+        "name": "metal",
+        "allowedVariants": [
+            "copper",
+            "tinbronze",
+            "bismuthbronze",
+            "blackbronze",
+            "gold",
+            "silver",
+            "iron",
+            "meteoriciron",
+            "steel"
+        ]
+    },
+
+    "pattern": [
+        [
+            "_____##__##_",
+            "____###_###_",
+            "___########_",
+            "__########__",
+            "_##########_",
+            "######__###_",
+            "###______###",
+            "_________###",
+            "__________##",
+            "__________##",
+            "___________#",
+            "___________#"
+        ]
+    ],
+
+    "output": {
+        "type": "item",
+        "code": "multitools:paxelhead-{metal}"
+    }
+}

@@ -1,0 +1,369 @@
+{
+  "mainpurpose": "Jack of all trades, master of none. A paxel combines a Pickaxe, Axe, and Shovel.",
+
+  "code": "paxel",
+
+  "class": "ItemMultitools",
+
+  "storageflags": 5,
+
+  "shape": { "base": "multitools:item/paxel" },
+
+  "variantgroups": [
+    {
+      "code": "metal",
+      "states": [
+        "copper",
+        "tinbronze",
+        "bismuthbronze",
+        "blackbronze",
+        "gold",
+        "silver",
+        "iron",
+        "meteoriciron",
+        "steel"
+      ]
+    }
+  ],
+
+  "texturesByType": {
+    "*": {
+      "metal": {
+        "base": "game:block/metal/ingot/{metal}"
+      }
+    }
+  },
+
+  "tooltierbytype": {
+    "*-copper": 2,
+    "*-gold": 2,
+    "*-silver": 2,
+    "*-bismuthbronze": 3,
+    "*-tinbronze": 3,
+    "*-blackbronze": 3,
+    "*-iron": 4,
+    "*-meteoriciron": 4,
+    "*-steel": 5
+  },
+
+  "creativeinventory": {
+    "general": [ "*" ],
+    "items": [ "*" ],
+    "tools": [ "*" ],
+    "Multitools": [ "*" ]
+  },
+
+  "maxstacksize": 1,
+
+  "heldTpIdleAnimation": "holdtool",
+
+  "heldTpHitAnimation": "pickaxe",
+
+  "durabilitybytype": {
+    "*-gold": 150,
+    "*-silver": 175,
+    "*-copper": 300,
+    "*-tinbronze": 450,
+    "*-bismuthbronze": 500,
+    "*-blackbronze": 550,
+    "*-iron": 1000,
+    "*-meteoriciron": 1300,
+    "*-steel": 2500
+  },
+
+  "damagedby": [
+    "blockbreaking",
+    "attacking"
+  ],
+
+  "attackPowerbytype": {
+    "*-copper": 1.5,
+    "*-gold": 1.9,
+    "*-silver": 1.9,
+    "*-bismuthbronze": 1.8,
+    "*-tinbronze": 2,
+    "*-blackbronze": 2.3,
+    "*-iron": 2.5,
+    "*-meteoriciron": 2.75,
+    "*-steel": 3
+  },
+
+
+  "attackRange": 1.5,
+
+  "miningspeedbytype": {
+    "*-copper": {
+      "ceramic": 1.5,
+      "stone": 4,
+      "ore": 4,
+      "metal": 4,
+      "ice": 1.75,
+      "soil": 4,
+      "sand": 4,
+      "gravel": 2.6,
+      "snow": 2.6,
+      "wood": 5.2,
+      "plant": 2.8,
+      "leaves": 2.4
+    },
+    "*-gold": {
+      "ceramic": 1.75,
+      "stone": 5,
+      "ore": 5,
+      "metal": 5,
+      "ice": 2,
+      "soil": 5.4,
+      "sand": 5.4,
+      "gravel": 3.6,
+      "snow": 3.6,
+      "wood": 4.5,
+      "plant": 3.3,
+      "leaves": 3
+    },
+    "*-silver": {
+      "ceramic": 1.75,
+      "stone": 5,
+      "ore": 5,
+      "metal": 5,
+      "ice": 2,
+      "soil": 5.4,
+      "sand": 5.4,
+      "gravel": 3.6,
+      "snow": 3.6,
+      "wood": 4.5,
+      "plant": 3.3,
+      "leaves": 3
+    },
+    "*-bismuthbronze": {
+      "ceramic": 2,
+      "stone": 5.5,
+      "ore": 5.5,
+      "metal": 5.5,
+      "ice": 2.2,
+      "soil": 5,
+      "sand": 5,
+      "gravel": 3.2,
+      "snow": 3.2,
+      "wood": 5.8,
+      "plant": 3.5,
+      "leaves": 2.6
+    },
+    "*-tinbronze": {
+      "ceramic": 2.25,
+      "stone": 6,
+      "ore": 6,
+      "metal": 6,
+      "ice": 2.3,
+      "soil": 5.4,
+      "sand": 5.4,
+      "gravel": 3.6,
+      "snow": 3.6,
+      "wood": 6.3,
+      "plant": 3.8,
+      "leaves": 3
+    },
+    "*-blackbronze": {
+      "ceramic": 2.5,
+      "stone": 6.5,
+      "ore": 6.5,
+      "metal": 6.5,
+      "ice": 2.8,
+      "soil": 5.5,
+      "sand": 5.5,
+      "gravel": 3.7,
+      "snow": 3.7,
+      "wood": 6.6,
+      "plant": 4,
+      "leaves": 3.1
+    },
+    "*-iron": {
+      "ceramic": 2.75,
+      "stone": 7.5,
+      "ore": 7.5,
+      "metal": 7.5,
+      "ice": 3.5,
+      "soil": 6,
+      "sand": 6,
+      "gravel": 4,
+      "snow": 4,
+      "wood": 8.4,
+      "plant": 5,
+      "leaves": 3.2
+    },
+    "*-meteoriciron": {
+      "ceramic": 3,
+      "stone": 8,
+      "ore": 8,
+      "metal": 8,
+      "ice": 3.75,
+      "soil": 6.5,
+      "sand": 6.5,
+      "gravel": 4.2,
+      "snow": 4.2,
+      "wood": 9.6,
+      "plant": 5.5,
+      "leaves": 3.6
+    },
+    "*-steel": {
+      "ceramic": 3.25,
+      "stone": 9,
+      "ore": 9,
+      "metal": 9,
+      "ice": 4.25,
+
+      "soil": 7,
+      "sand": 7,
+      "gravel": 4.4,
+      "snow": 4.4,
+
+      "wood": 11,
+      "plant": 6,
+      "leaves": 4
+    }
+  },
+
+  "attributes": {
+    "heldItemPitchFollow": 0.9,
+    "handbook": {
+      "groupBy": [ "Multitool-*" ],
+      "extraSections": [
+        {
+          "title": "multitools:paxel-metal-handbook-title",
+          "text": "multitools:paxel-metal-handbook-text"
+        }
+      ]
+    },
+
+    "rackable": true,
+
+    "slotRefillIdentifier": "paxel",
+
+    "toolrackTransform": {
+      "rotation": {
+        "y": 2.5,
+        "z": -1
+      },
+      "translation": {
+        "x": -0.1,
+        "y": 0.59
+      },
+      "scale": 1.25
+    },
+    "groundStorageTransform": {
+      "translation": {
+        "x": 0,
+        "y": 0.1,
+        "z": -0.065
+      },
+      "rotation": {
+        "x": 20,
+        "y": 88,
+        "z": -87
+      },
+      "scale": 0.88
+    }
+  },
+
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "WallHalves",
+        "wallOffY": 1,
+        "ctrlKey": true,
+        "selectionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.1,
+          "z2": 1
+        },
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 0,
+          "y2": 0,
+          "z2": 0
+        }
+      }
+    }
+  ],
+
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": -89,
+      "y": 47,
+      "z": 33
+    },
+    "origin": {
+      "x": 0.61,
+      "y": 0,
+      "z": 0.47
+    },
+    "scale": 1.7
+  },
+
+  "fpHandTransform": {
+    "translation": {
+      "x": -0.4,
+      "y": -0.5,
+      "z": 0.6
+    },
+    "rotation": {
+      "x": -35,
+      "y": 0,
+      "z": 85
+    },
+    "origin": {
+      "x": 0.1,
+      "y": 0.5,
+      "z": 0.5
+    },
+    "scale": 2.5
+  },
+
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 3.4
+  },
+
+  "tpHandTransform": {
+    "translation": {
+      "x": -0.87,
+      "y": -0.01,
+      "z": -0.56
+    },
+    "rotation": {
+      "x": -90,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 0.8
+  }
+}

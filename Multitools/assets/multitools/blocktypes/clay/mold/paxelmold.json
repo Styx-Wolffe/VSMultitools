@@ -1,0 +1,272 @@
+{
+    "enabled": true,
+
+    "code": "paxelmold",
+
+    "classByType": {
+        "paxelmold-raw-*": "Block",
+        "paxelmold-burned-*": "BlockToolMold"
+    },
+
+    "variantgroups": [
+        {
+            "code": "materialtype",
+            "states": [ "raw", "burned" ]
+        },
+        {
+            "code": "tooltype",
+            "states": [ "paxel" ]
+        },
+        {
+            "code": "side",
+            "loadFromProperties": "game:abstract/horizontalorientation"
+        }
+    ],
+
+    "shapebytype": {
+        "*-north": {
+            "base": "multitools:block/paxelmold",
+            "rotateY": 0
+        },
+      "*-east": {
+        "base": "multitools:block/paxelmold",
+        "rotateY": 270
+      },
+      "*-south": {
+        "base": "multitools:block/paxelmold",
+        "rotateY": 180
+      },
+      "*-west": {
+        "base": "multitools:block/paxelmold",
+        "rotateY": 90
+      }
+    },
+
+  "texturesByType": {
+    "paxelmold-raw-*": {
+      "all": {
+        "base": "game:block/clay/blueclay"
+      }
+    },
+    "paxelmold-burned-*": {
+      "floor": {
+        "base": "game:block/clay/ceramic-dark"
+      },
+      "other": {
+        "base": "game:block/clay/ceramic"
+      }
+    }
+  },
+
+    "blockmaterial": "Ceramic",
+
+    "creativeinventory": {
+        "general": [ "*-north" ],
+        "contruction": [ "*-north" ],
+        "Multitools": [ "*-north" ]
+    },
+
+    "replaceable": 700,
+    "resistance": 1.5,
+    "maxStackSize": 8,
+    "lightAbsorption": 0,
+    "sounds": {
+        "walk": "game:walk/stone"
+    },
+    "collisionboxByType": {
+        "*": {
+            "x1": 0.0625,
+            "y1": 0,
+            "z1": 0.0625,
+            "x2": 0.9375,
+            "y2": 0.125,
+            "z2": 0.9375
+        }
+    },
+
+    "selectionboxByType": {
+        "*": {
+            "x1": 0.0625,
+            "y1": 0,
+            "z1": 0.0625,
+            "x2": 0.9375,
+            "y2": 0.125,
+            "z2": 0.9375
+        }
+    },
+
+    "sideopaque": {
+        "all": false
+    },
+
+    "sidesolid": {
+        "all": false
+    },
+
+    "behaviorsByType": {
+        "*-raw-*": [
+            {
+                "name": "GroundStorable",
+                "properties": { "layout": "SingleCenter" }
+            },
+            {
+                "name": "Unplaceable",
+                "__comment": "The ground storable obsoletes this being a block. Should be an item, but is kept a block for backwards compatibility"
+            },
+            {
+                "name": "RightClickPickup"
+            }
+        ],
+        "*": [
+            {
+                "name": "Lockable"
+            },
+            {
+                "name": "UnstableFalling"
+            },
+            {
+                "name": "HorizontalOrientable"
+            }
+        ]
+    },
+
+  "entityClassByType": {
+    "paxelmold-burned-*": "ToolMold"
+  },
+
+  "entityBehaviorsByType": {
+    "paxelmold-burned-*": [
+      {
+        "name": "TemperatureSensitive"
+      }
+    ]
+  },
+
+    "attributes": {
+        "reinforcable": true,
+        "shatteredShape": {
+            "base": "game:block/clay/mold/shattered-ingot"
+        },
+        "onTongTransformByType": {
+            "*": {
+                "translation": {
+                    "x": -0.9,
+                    "y": -1.5,
+                    "z": -0.6
+                },
+                "rotation": {
+                    "x": 117,
+                    "y": 0,
+                    "z": 0
+                },
+                "scale": 0.74
+            }
+        }
+    },
+
+  "attributesByType": {
+    "paxelmold-burned-*": {
+      "requiredUnits": 200,
+      "fillHeight": 1,
+      "moldrackable": true,
+      "onmoldrackTransform": {
+        "rotation": {
+          "z": 90
+        }
+      },
+      "drop": {
+        "type": "item",
+        "code": "multitools:paxelhead-{metal}"
+      }
+    }
+  },
+
+  "combustiblePropsByType": {
+    "paxelmold-raw-*": {
+      "meltingPoint": 650,
+      "meltingDuration": 45,
+      "smeltedRatio": 1,
+      "smeltingType": "fire",
+      "smeltedStack": {
+        "type": "block",
+        "code": "multitools:paxelmold-burned-{tooltype}-{side}"
+      },
+      "requiresContainer": false
+    }
+  },
+
+
+    "guiTransform": {
+        "translation": {
+            "x": 0,
+            "y": 3,
+            "z": 0
+        },
+        "origin": {
+            "x": 0.5,
+            "y": 0.0625,
+            "z": 0.5
+        },
+        "scale": 1.33
+    },
+
+    "tpHandTransform": {
+        "translation": {
+            "x": -1,
+            "y": -0.6,
+            "z": -1.05
+        },
+        "rotation": {
+            "x": -87,
+            "y": 9,
+            "z": 4
+        },
+        "origin": {
+            "x": 0.5,
+            "y": 0.125,
+            "z": 0.5
+        },
+        "scale": 0.5
+    },
+
+    "fpHandTransform": {
+        "translation": {
+            "x": -0.3,
+            "y": 0,
+            "z": 0.5
+        },
+        "rotation": {
+            "x": 16,
+            "y": -51,
+            "z": 91
+        },
+        "origin": {
+            "x": 0.5,
+            "y": 0.125,
+            "z": 0.5
+        }
+    },
+
+    "groundTransform": {
+        "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotation": {
+            "x": 0,
+            "y": -45,
+            "z": 0
+        },
+        "origin": {
+            "x": 0.5,
+            "y": 0,
+            "z": 0.5
+        },
+        "scale": 2.2
+    }
+}
+
+
+
+
