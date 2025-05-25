@@ -3,7 +3,7 @@
 
   "code": "paxel",
 
-  "class": "ItemMultitools",
+  "class": "ItemPaxel",
 
   "storageflags": 5,
 
@@ -81,11 +81,11 @@
     "*-gold": 1.9,
     "*-silver": 1.9,
     "*-bismuthbronze": 1.8,
-    "*-tinbronze": 2,
+    "*-tinbronze": 2.0,
     "*-blackbronze": 2.3,
     "*-iron": 2.5,
     "*-meteoriciron": 2.75,
-    "*-steel": 3
+    "*-steel": 3.0
   },
 
 
@@ -94,12 +94,12 @@
   "miningspeedbytype": {
     "*-copper": {
       "ceramic": 1.5,
-      "stone": 4,
-      "ore": 4,
-      "metal": 4,
+      "stone": 4.0,
+      "ore": 4.0,
+      "metal": 4.0,
       "ice": 1.75,
-      "soil": 4,
-      "sand": 4,
+      "soil": 4.0,
+      "sand": 4.0,
       "gravel": 2.6,
       "snow": 2.6,
       "wood": 5.2,
@@ -108,40 +108,40 @@
     },
     "*-gold": {
       "ceramic": 1.75,
-      "stone": 5,
-      "ore": 5,
-      "metal": 5,
-      "ice": 2,
+      "stone": 5.0,
+      "ore": 5.0,
+      "metal": 5.0,
+      "ice": 2.0,
       "soil": 5.4,
       "sand": 5.4,
       "gravel": 3.6,
       "snow": 3.6,
       "wood": 4.5,
       "plant": 3.3,
-      "leaves": 3
+      "leaves": 3.0
     },
     "*-silver": {
       "ceramic": 1.75,
-      "stone": 5,
-      "ore": 5,
-      "metal": 5,
-      "ice": 2,
+      "stone": 5.0,
+      "ore": 5.0,
+      "metal": 5.0,
+      "ice": 2.0,
       "soil": 5.4,
       "sand": 5.4,
       "gravel": 3.6,
       "snow": 3.6,
       "wood": 4.5,
       "plant": 3.3,
-      "leaves": 3
+      "leaves": 3.0
     },
     "*-bismuthbronze": {
-      "ceramic": 2,
+      "ceramic": 2.0,
       "stone": 5.5,
       "ore": 5.5,
       "metal": 5.5,
       "ice": 2.2,
-      "soil": 5,
-      "sand": 5,
+      "soil": 5.0,
+      "sand": 5.0,
       "gravel": 3.2,
       "snow": 3.2,
       "wood": 5.8,
@@ -150,9 +150,9 @@
     },
     "*-tinbronze": {
       "ceramic": 2.25,
-      "stone": 6,
-      "ore": 6,
-      "metal": 6,
+      "stone": 6.0,
+      "ore": 6.0,
+      "metal": 6.0,
       "ice": 2.3,
       "soil": 5.4,
       "sand": 5.4,
@@ -160,7 +160,7 @@
       "snow": 3.6,
       "wood": 6.3,
       "plant": 3.8,
-      "leaves": 3
+      "leaves": 3.0
     },
     "*-blackbronze": {
       "ceramic": 2.5,
@@ -173,7 +173,7 @@
       "gravel": 3.7,
       "snow": 3.7,
       "wood": 6.6,
-      "plant": 4,
+      "plant": 4.0,
       "leaves": 3.1
     },
     "*-iron": {
@@ -182,19 +182,19 @@
       "ore": 7.5,
       "metal": 7.5,
       "ice": 3.5,
-      "soil": 6,
-      "sand": 6,
-      "gravel": 4,
-      "snow": 4,
+      "soil": 6.0,
+      "sand": 6.0,
+      "gravel": 4.0,
+      "snow": 4.0,
       "wood": 8.4,
-      "plant": 5,
+      "plant": 5.0,
       "leaves": 3.2
     },
     "*-meteoriciron": {
-      "ceramic": 3,
-      "stone": 8,
-      "ore": 8,
-      "metal": 8,
+      "ceramic": 3.0,
+      "stone": 8.0,
+      "ore": 8.0,
+      "metal": 8.0,
       "ice": 3.75,
       "soil": 6.5,
       "sand": 6.5,
@@ -206,19 +206,17 @@
     },
     "*-steel": {
       "ceramic": 3.25,
-      "stone": 9,
-      "ore": 9,
-      "metal": 9,
+      "stone": 9.0,
+      "ore": 9.0,
+      "metal": 9.0,
       "ice": 4.25,
-
-      "soil": 7,
-      "sand": 7,
+      "soil": 7.0,
+      "sand": 7.0,
       "gravel": 4.4,
       "snow": 4.4,
-
-      "wood": 11,
-      "plant": 6,
-      "leaves": 4
+      "wood": 11.0,
+      "plant": 6.0,
+      "leaves": 4.0
     }
   },
 
