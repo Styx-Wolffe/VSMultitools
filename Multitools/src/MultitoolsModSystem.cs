@@ -23,7 +23,7 @@ namespace Multitools
             base.Start(api);
             api.Logger.Notification("Multitools has loaded!");
             base.Mod.Logger.Notification("Hello from template mod: " + api.Side.ToString());
-            api.RegisterItemClass("ItemMultitools", typeof(ItemMultitools));
+            api.RegisterItemClass("ItemPaxel", typeof(ItemPaxel));
         }
     }
 }

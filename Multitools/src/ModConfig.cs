@@ -5,9 +5,9 @@ namespace Multitools.Configuration
 {
     public static class ModConfig
     {
-        public static void WriteConfig<C>(ICoreAPI api, string jsonconfig, C config) where C : class, IModConfig
+        public static void WriteConfig<C>(ICoreAPI api, string jsonConfig, C config) where C : class, IModConfig
         {
-            ModConfig.GenerateConfig<C>(api, jsonconfig, config);
+            ModConfig.GenerateConfig<C>(api, jsonConfig, config);
         }
 
         public static C ReadConfig<C>(ICoreAPI api, string jsonConfig) where C : class, IModConfig
@@ -34,9 +34,9 @@ namespace Multitools.Configuration
             return c;
         }
 
-        private static C LoadConfig<C>(ICoreAPI api, string jsonconfig) where C : class, IModConfig
+        private static C LoadConfig<C>(ICoreAPI api, string jsonConfig) where C : class, IModConfig
         {
-            return api.LoadModConfig<C>(jsonconfig);
+            return api.LoadModConfig<C>(jsonConfig);
         }
 
         private static void GenerateConfig<C>(ICoreAPI api, string jsonconfig, C previousConfig = default(C)) where C : class, IModConfig
