@@ -60,16 +60,16 @@
   "heldTpHitAnimation": "pickaxe",
 
   "durabilitybytype": {
-    "*-gold": 150,
-    "*-silver": 175,
-    "*-copper": 300,
-    "*-tinbronze": 450,
-    "*-bismuthbronze": 500,
-    "*-blackbronze": 550,
-    "*-iron": 1000,
-    "*-meteoriciron": 1300,
-    "*-steel": 2500
-  },
+    "*-gold": 625,
+    "*-silver": 650,
+    "*-copper": 1250,
+    "*-tinbronze": 1950,
+    "*-bismuthbronze": 2200,
+    "*-blackbronze": 2500,
+    "*-iron": 5500,
+    "*-meteoriciron": 6800,
+    "*-steel": 13000
+  }, // Sum of all base tool durability by type + Average of all base tool durability by type + 30% for iron and above (Rounded for nicer looking numbers)
 
   "damagedby": [
     "blockbreaking",
