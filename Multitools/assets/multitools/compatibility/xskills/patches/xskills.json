@@ -1,0 +1,46 @@
+// I have no idea what the behavior names are, but it doesnt crash so it should be fine
+[
+  // XSkills compatibility - Item Behaviors
+  {
+    "dependsOn": [ { "modid": "xskills" } ],
+    "file": "multitools:itemtypes/tool/paxel.json",
+    "op": "addmerge",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "XSkillsPickaxeBehavior"
+      }
+    ]
+  },
+  {
+    "dependsOn": [ { "modid": "xskills" } ],
+    "file": "multitools:itemtypes/tool/paxel.json",
+    "op": "addmerge",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "XSkillsAxeBehavior"
+      }
+    ]
+  },
+  {
+    "dependsOn": [ { "modid": "xskills" } ],
+    "file": "multitools:itemtypes/tool/paxel.json",
+    "op": "addmerge",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "XSkillsShovelBehavior"
+      }
+    ]
+  },
+
+  // XSkills compatibility - Smithing Qualitity
+  {
+    "dependsOn": [ { "modid": "xskills" } ],
+    "file": "multitools:itemtypes/toolhead/paxelhead.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": { "qualityType": 0 }
+  }
+]

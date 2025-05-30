@@ -7,50 +7,35 @@ namespace Multitools.Configuration
     {
         public static void WriteConfig<C>(ICoreAPI api, string jsonConfig, C config) where C : class, IModConfig
         {
-            ModConfig.GenerateConfig<C>(api, jsonConfig, config);
+            if (config != null)
+            {
+                api.StoreModConfig(config, jsonConfig);
+            }
         }
 
         public static C ReadConfig<C>(ICoreAPI api, string jsonConfig) where C : class, IModConfig
         {
-            C c;
+            C config = null;
             try
             {
-                c = ModConfig.LoadConfig<C>(api, jsonConfig);
-                if (c == null)
+                config = api.LoadModConfig<C>(jsonConfig);
+                if (config == null)
                 {
-                    ModConfig.GenerateConfig<C>(api, jsonConfig, default(C));
-                    c = ModConfig.LoadConfig<C>(api, jsonConfig);
+                    config = (C)Activator.CreateInstance(typeof(C), new object[] { api, null });
+                    api.StoreModConfig(config, jsonConfig);
                 }
                 else
                 {
-                    ModConfig.GenerateConfig<C>(api, jsonConfig, c);
+                    config = (C)Activator.CreateInstance(typeof(C), new object[] { api, config });
+                    api.StoreModConfig(config, jsonConfig);
                 }
             }
-            catch
+            catch (Exception e)
             {
-                ModConfig.GenerateConfig<C>(api, jsonConfig, default(C));
-                c = ModConfig.ReadConfig<C>(api, jsonConfig);
+                api.Logger.Error("[Multitools] Error loading config file: {0}", e.Message);
+                config = (C)Activator.CreateInstance(typeof(C), new object[] { api, null });
             }
-            return c;
-        }
-
-        private static C LoadConfig<C>(ICoreAPI api, string jsonConfig) where C : class, IModConfig
-        {
-            return api.LoadModConfig<C>(jsonConfig);
-        }
-
-        private static void GenerateConfig<C>(ICoreAPI api, string jsonconfig, C previousConfig = default(C)) where C : class, IModConfig
-        {
-            api.StoreModConfig<C>(ModConfig.CloneConfig<C>(api, previousConfig), jsonconfig);
-        }
-
-        private static C CloneConfig<C>(ICoreAPI api, C config = default(C)) where C : class, IModConfig
-        {
-            return (C)((object)Activator.CreateInstance(typeof(C), new object[]
-            {
-                api,
-                config
-            }));
+            return config;
         }
     }
 }

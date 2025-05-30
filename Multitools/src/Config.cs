@@ -6,31 +6,33 @@ namespace Multitools.Configuration
 {
     public class Config : IModConfig
     {
+        public Dictionary<string,bool> TraderEnabled { get; set; }
+        public Config()
+        {
+            TraderEnabled = new Dictionary<string, bool>
+            {
+                { "buildmaterials", true },
+                { "survivalgoods", true },
+                { "treasurehunter", true }
+            };
+        }
         public Config(ICoreAPI api, Config previousConfig = null)
         {
-            if (previousConfig == null)
-            {
-                return;
-            }
-            this.TraderEnabled["buildmaterials"] = (!previousConfig.TraderEnabled["buildmaterials"] || previousConfig.TraderEnabled["buildmaterials"]);
-            this.TraderEnabled["survivalgoods"] = (!previousConfig.TraderEnabled["survivalgoods"] || previousConfig.TraderEnabled["survivalgoods"]);
-            this.TraderEnabled["treasurehunter"] = (!previousConfig.TraderEnabled["treasurehunter"] || previousConfig.TraderEnabled["treasurehunter"]);
-        }
+            TraderEnabled = new Dictionary<string, bool>();
 
-        public Dictionary<string, bool> TraderEnabled = new Dictionary<string, bool>
-        {
+            if (previousConfig != null)
             {
-                "buildmaterials",
-                true
-            },
-            {
-                "survivalgoods",
-                true
-            },
-            {
-                "treasurehunter",
-                true
+                foreach (var kvp in previousConfig.TraderEnabled)
+                {
+                    TraderEnabled[kvp.Key] = kvp.Value;
+                }
             }
-        };
+            else
+            {
+                TraderEnabled["buildmaterials"] = true;
+                TraderEnabled["survivalgoods"] = true;
+                TraderEnabled["treasurehunter"] = true;
+            }
+        }
     }
 }
